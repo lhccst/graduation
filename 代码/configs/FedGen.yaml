@@ -1,0 +1,17 @@
+num_repeat_times: 1
+distribution: dirichlet
+alpha: 0.01
+
+server:
+  global_rounds: 50
+  lowest_join_rate: 1
+  generator_learning_rate: 0.005
+  server_epochs: 10
+  server_batch_size: 64
+
+client:
+  num_clients: 20
+  num_classes_per_client: 2
+  batch_size: 64
+  learning_rate: 0.01
+  local_epochs: 2
